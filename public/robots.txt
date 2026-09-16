@@ -1,0 +1,5 @@
+# robots.txt for Prince Goyal Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://princegoyal.dev/sitemap.xml
