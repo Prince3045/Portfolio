@@ -61,7 +61,7 @@
 
 ## 💼 Featured Projects
 
-1. **[RozgaarX](https://github.com/Prashantp070/WEB_Tech)** — Blue-Collar Service & Employment Platform featuring OTP authentication, real-time booking statuses, and role-based access. Includes an interactive full-page architecture case study.
+1. **[RozgaarX](https://github.com/Prince3045/RozgaarX)** — Blue-Collar Service & Employment Platform featuring OTP authentication, real-time booking statuses, and role-based access. Includes an interactive full-page architecture case study.
 2. **AI Waste Sorter & Optimizer** — Smart waste segregation interface powered by computer vision classification and dynamic carbon offset analytics.
 3. **PulseChat Engine** — Low-latency real-time collaboration app with typing indicators, presence tracking, and ephemeral rooms.
 
@@ -106,7 +106,7 @@ npm run preview
 
 - **Email:** [princekumargoyal30@gmail.com](mailto:princekumargoyal30@gmail.com)
 - **LinkedIn:** [linkedin.com/in/prince-goyal-077366292](https://www.linkedin.com/in/prince-goyal-077366292)
-- **GitHub:** [github.com/Prashantp070](https://github.com/Prashantp070)
+- **GitHub:** [github.com/Prince3045](https://github.com/Prince3045)
 
 ---
 
