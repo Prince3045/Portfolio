@@ -216,26 +216,6 @@ export const HeroSection = () => {
                 className="w-full max-h-[380px] sm:max-h-[460px] object-contain drop-shadow-[0_25px_45px_rgba(0,0,0,0.85)] filter transition-transform duration-500 hover:scale-[1.03]"
                 loading="eager"
               />
-
-              {/* Floating Tech Badge 1 (Top-Right) */}
-              <motion.div
-                animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 4.2, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-                className="absolute -top-1 sm:top-2 right-1 sm:right-4 py-1.5 px-3 rounded-xl bg-surface-deep/90 border border-white/15 backdrop-blur-md shadow-xl flex items-center gap-2 pointer-events-none"
-              >
-                <div className="w-2 h-2 rounded-full bg-accent-cyan animate-ping" />
-                <span className="text-xs font-mono font-semibold text-white">Full-Stack Dev</span>
-              </motion.div>
-
-              {/* Floating Tech Badge 2 (Bottom-Left) */}
-              <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                className="absolute bottom-1 sm:bottom-4 left-1 sm:left-4 py-1.5 px-3 rounded-xl bg-surface-deep/90 border border-white/15 backdrop-blur-md shadow-xl flex items-center gap-2 pointer-events-none"
-              >
-                <span className="text-amber-400 text-xs">⚡</span>
-                <span className="text-xs font-mono font-semibold text-white">Clean Code & DSA</span>
-              </motion.div>
             </motion.div>
           </motion.div>
 
