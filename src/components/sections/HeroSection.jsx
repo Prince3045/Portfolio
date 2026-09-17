@@ -112,8 +112,6 @@ export const HeroSection = () => {
               <div className="flex items-center flex-wrap gap-2 text-xs font-mono text-text-primary">
                 <span className="font-semibold text-white">React</span>
                 <span className="text-text-dim">•</span>
-                <span className="font-semibold text-white">JavaScript</span>
-                <span className="text-text-dim">•</span>
                 <span className="font-semibold text-white">Java</span>
                 <span className="text-text-dim">•</span>
                 <span className="font-semibold text-white">Spring Boot</span>
