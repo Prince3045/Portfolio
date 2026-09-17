@@ -185,34 +185,58 @@ export const HeroSection = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Column: 3D Developer Workspace Artwork */}
+          {/* Right Column: 3D Developer Character (Floating transparent cutout) */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.94, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: [0, -8, 0] }}
-            transition={{
-              opacity: { duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] },
-              scale: { duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] },
-              y: { duration: 5.5, repeat: Infinity, ease: 'easeInOut' },
-            }}
-            className="lg:col-span-5 relative flex items-center justify-center w-full select-none"
+            initial={{ opacity: 0, scale: 0.92, y: 20 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-5 relative flex items-center justify-center w-full select-none py-4"
           >
-            {/* Multi-Layer Ambient Behind-Glow */}
+            {/* Multi-Layer Ambient Behind-Glow & Platform Light */}
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute -inset-4 rounded-full bg-gradient-to-tr from-brand/40 via-accent-cyan/30 to-accent-emerald/20 blur-[90px] opacity-75 animate-pulse"
+              className="pointer-events-none absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-brand/35 via-accent-cyan/25 to-accent-emerald/20 blur-[90px] opacity-75 animate-pulse"
             />
 
-            {/* Seamless 3D Artwork Frame */}
-            <div className="relative w-full max-w-lg aspect-[3/2] rounded-2xl sm:rounded-3xl overflow-hidden border border-white/15 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.85)] group backdrop-blur-sm">
+            {/* Ground / Floor Radial Shadow & Glow */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute bottom-2 w-3/4 h-12 bg-accent-cyan/20 blur-2xl rounded-full"
+            />
+
+            {/* Floating 3D Character Container */}
+            <motion.div
+              animate={{ y: [0, -12, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+              className="relative w-full max-w-xs sm:max-w-md flex items-center justify-center"
+            >
               <img
-                src="/prince-developer-hero.jpg"
-                alt="Prince Goyal - Software Developer Workspace"
-                className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+                src="/developer-3d-character.webp"
+                alt="Prince Goyal - 3D Software Developer"
+                className="w-full max-h-[380px] sm:max-h-[460px] object-contain drop-shadow-[0_25px_45px_rgba(0,0,0,0.85)] filter transition-transform duration-500 hover:scale-[1.03]"
                 loading="eager"
               />
-              {/* Subtle glass reflection overlay */}
-              <div className="pointer-events-none absolute inset-0 rounded-2xl sm:rounded-3xl ring-1 ring-inset ring-white/10 bg-gradient-to-t from-[#07090e]/40 via-transparent to-white/5" />
-            </div>
+
+              {/* Floating Tech Badge 1 (Top-Right) */}
+              <motion.div
+                animate={{ y: [0, -8, 0] }}
+                transition={{ duration: 4.2, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
+                className="absolute -top-1 sm:top-2 right-1 sm:right-4 py-1.5 px-3 rounded-xl bg-surface-deep/90 border border-white/15 backdrop-blur-md shadow-xl flex items-center gap-2 pointer-events-none"
+              >
+                <div className="w-2 h-2 rounded-full bg-accent-cyan animate-ping" />
+                <span className="text-xs font-mono font-semibold text-white">Full-Stack Dev</span>
+              </motion.div>
+
+              {/* Floating Tech Badge 2 (Bottom-Left) */}
+              <motion.div
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                className="absolute bottom-1 sm:bottom-4 left-1 sm:left-4 py-1.5 px-3 rounded-xl bg-surface-deep/90 border border-white/15 backdrop-blur-md shadow-xl flex items-center gap-2 pointer-events-none"
+              >
+                <span className="text-amber-400 text-xs">⚡</span>
+                <span className="text-xs font-mono font-semibold text-white">Clean Code & DSA</span>
+              </motion.div>
+            </motion.div>
           </motion.div>
 
         </div>
